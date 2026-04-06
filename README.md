@@ -1,7 +1,6 @@
 <!-- Header -->
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=58A6FF&center=true&vCenter=true&width=600&lines=Cameron+Williams;Shipping+real+products+from+a+homelab+in+Baltimore." alt="Typing SVG" />
-</div>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=2000&color=9B59B6&center=true&vCenter=true&width=600&duration=3000&lines=Cameron+Williams;Shipping+real+products+from+a+homelab+in+Baltimore." alt="Typing SVG" />
 
 <div align="center">
   <a href="https://camwillm.me">camwillm.me</a> &nbsp;•&nbsp;
