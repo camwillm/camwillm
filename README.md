@@ -54,14 +54,26 @@ My homelab runs 24/7 on a Ryzen 7 5800X with 32GB RAM, hosting LLM inference, ve
 
 ## Projects
 
-| Project | Description | Stack |
-|--------|-------------|-------|
-| [AI Resume Tailoring System](https://github.com/camwillm) | Self-hosted RAG pipeline that tailors resumes per job description. Flowise + Qdrant + Claude Haiku, 7 templates, PDF export, token tracking | Python, Node.js, React, Qdrant, Docker |
-| [BearAdvisorAI](https://github.com/camwillm/BearAdvisorAI) | Multimodal AI advising system for Morgan State. Catches Gemini hallucinations with a 7-step validation pipeline | React, Vertex AI, Gemini 1.5 Pro, PostgreSQL |
-| [Cenarium](https://github.com/camwillm/Cenarium) | Full-stack nutrition and meal planning SaaS. ETL pipeline over 1,100+ USDA food records, deployed on AWS | React, Fastify, PostgreSQL, Terraform, Docker |
-| [The Bear Rooms](https://github.com/camwillm/ThebearRooms) | Roommate matching platform shipped in 24hrs at Morgan Hacks 2025 | React Native, Node.js, TypeScript |
-| [PantryLogger](https://github.com/camwillm/PantryLogger) | iOS pantry tracker with barcode scanning, expiration tracking, and waste gamification. Submitted to Apple Swift Student Challenge | Swift, SwiftUI, MVVM |
-| [Slime Mold Simulation](https://github.com/camwillm/slime-mold-zig) | Physarum polycephalum simulation compiled to WASM. Tero 2007 model with Gauss-Seidel solver | Zig, WASM, Canvas |
+| Project | Demo | Stack |
+|--------|------|-------|
+| [AI Resume Tailoring System](https://github.com/camwillm) | [▶ Live](https://resumetailor.camwillm.me) | Python, Node.js, React, Qdrant, Docker |
+| [BearAdvisorAI](https://github.com/camwillm/BearAdvisorAI) | Demo coming soon | React, Vertex AI, Gemini 1.5 Pro, PostgreSQL |
+| [Cenarium](https://github.com/camwillm/Cenarium) | Demo coming soon | React, Fastify, PostgreSQL, Terraform, Docker |
+| [The Bear Rooms](https://github.com/camwillm/ThebearRooms) | Demo coming soon | React Native, Node.js, TypeScript |
+| [PantryLogger](https://github.com/camwillm/PantryLogger) | Demo coming soon | Swift, SwiftUI, MVVM |
+| [Slime Mold Simulation](https://github.com/camwillm/slime-mold-zig) | [▶ Live](https://slime.camwillm.me) | Zig, WASM, Canvas |
+
+<details>
+<summary>Project descriptions</summary>
+
+- **AI Resume Tailoring System** — Self-hosted RAG pipeline that tailors resumes per job description. Flowise + Qdrant + Claude Haiku, 7 templates, PDF export, token tracking
+- **BearAdvisorAI** — Multimodal AI advising system for Morgan State. Catches Gemini hallucinations with a 7-step validation pipeline
+- **Cenarium** — Full-stack nutrition and meal planning SaaS. ETL pipeline over 1,100+ USDA food records, deployed on AWS
+- **The Bear Rooms** — Roommate matching platform shipped in 24hrs at Morgan Hacks 2025
+- **PantryLogger** — iOS pantry tracker with barcode scanning, expiration tracking, and waste gamification. Submitted to Apple Swift Student Challenge
+- **Slime Mold Simulation** — Physarum polycephalum simulation compiled to WASM. Tero 2007 model with Gauss-Seidel solver
+
+</details>
 
 ---
 
