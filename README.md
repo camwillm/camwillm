@@ -1,6 +1,6 @@
 <!-- Header -->
 <div align="center">
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=2000&color=9B59B6&center=true&vCenter=true&width=600&duration=3000&lines=Cameron+Williams;Shipping+real+products+from+a+homelab+in+Baltimore." alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=2000&color=9B59B6&center=true&vCenter=true&width=600&duration=3000&lines=Cameron+Williams;Shipping+real+products+from+a+homelab." alt="Typing SVG" />
 
 <div align="center">
   <a href="https://camwillm.me">camwillm.me</a> &nbsp;•&nbsp;
@@ -88,7 +88,7 @@ Services:  Ollama (qwen2.5:14b) · Qdrant · Flowise · Vaultwarden · Plane · 
 App:       AI Resume Tailoring System (RAG + Claude Haiku + React frontend)
 ```
 
-First blog post: [I Turned My Old Gaming PCs Into the Infrastructure I Run My Life On](https://blog.camwillm.me)
+First blog post: [I Turned My Old Gaming PCs Into the Infrastructure I Run My Life On](https://camwillm.hashnode.dev)
 
 ---
 
