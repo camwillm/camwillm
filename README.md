@@ -59,7 +59,7 @@ My homelab runs 24/7 on a Ryzen 7 5800X with 32GB RAM, hosting LLM inference, ve
 | [AI Resume Tailoring System](https://github.com/camwillm) | [▶ Live](https://resumetailor.camwillm.me) | Python, Node.js, React, Qdrant, Docker |
 | [BearAdvisorAI](https://github.com/camwillm/BearAdvisorAI) | Demo coming soon | React, Vertex AI, Gemini 1.5 Pro, PostgreSQL |
 | [Cenarium](https://github.com/camwillm/Cenarium) | Demo coming soon | React, Fastify, PostgreSQL, Terraform, Docker |
-| [The Bear Rooms](https://github.com/camwillm/ThebearRooms) | Demo coming soon | React Native, Node.js, TypeScript |
+| [The Bear Rooms](https://github.com/camwillm/ThebearRooms) | [▶ Live](https://bearrooms.camwillm.me) | React Native, Node.js, TypeScript |
 | [PantryLogger](https://github.com/camwillm/PantryLogger) | Demo coming soon | Swift, SwiftUI, MVVM |
 | [Slime Mold Simulation](https://github.com/camwillm/slime-mold-zig) | [▶ Live](https://slime.camwillm.me) | Zig, WASM, Canvas |
 
