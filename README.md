@@ -4,7 +4,7 @@
 
 <div align="center">
   <a href="https://camwillm.me">camwillm.me</a> &nbsp;•&nbsp;
-  <a href="https://blog.camwillm.me">Blog</a> &nbsp;•&nbsp;
+  <a href="https://camwillm.hashnode.dev">Blog</a> &nbsp;•&nbsp;
   <a href="https://linkedin.com/in/camwillm">LinkedIn</a> &nbsp;•&nbsp;
   <span>Baltimore, MD</span>
 </div>
