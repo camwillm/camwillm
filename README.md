@@ -4,7 +4,7 @@
 
 <br/>
 
-<a href="https://camwillm.me">camwillm.me</a> &nbsp;•&nbsp;
+<a href="https://github.com/camwillm">GitHub</a> &nbsp;•&nbsp;
 <a href="https://camwillm.hashnode.dev">Blog</a> &nbsp;•&nbsp;
 <a href="https://linkedin.com/in/camwillm">LinkedIn</a> &nbsp;•&nbsp;
 <span>Baltimore, MD</span>
@@ -61,12 +61,12 @@ My homelab runs 24/7 on a Ryzen 7 5800X with 32GB RAM, hosting LLM inference, ve
 | Project | Demo | Stack |
 |--------|------|-------|
 | [Stock Position Monitor](https://github.com/camwillm/stock-position-monitor) | [Architecture](https://github.com/camwillm/stock-position-monitor#readme) | Go, SQLite, Docker, Tailscale |
-| [AI Resume Tailoring System](https://github.com/camwillm) | [▶ Live](https://resumetailor.camwillm.me) | Python, Node.js, React, Qdrant, Docker |
+| [AI Resume Tailoring System](https://github.com/camwillm) | Private (self-hosted) | Python, Node.js, React, Qdrant, Docker |
 | [BearAdvisorAI](https://github.com/camwillm/BearAdvisorAI) | Demo coming soon | React, Vertex AI, Gemini 1.5 Pro, PostgreSQL |
 | [Cenarium](https://github.com/camwillm/Cenarium) | Demo coming soon | React, Fastify, PostgreSQL, Terraform, Docker |
-| [The Bear Rooms](https://github.com/camwillm/ThebearRooms) | [▶ Live](https://bearrooms.camwillm.me) | React Native, Node.js, TypeScript |
+| [The Bear Rooms](https://github.com/camwillm/ThebearRooms) | Demo coming soon | React Native, Node.js, TypeScript |
 | [PantryLogger](https://github.com/camwillm/PantryLogger) | Demo coming soon | Swift, SwiftUI, MVVM |
-| [Slime Mold Simulation](https://github.com/camwillm/slime-mold-zig) | [▶ Live](https://slime.camwillm.me) | Zig, WASM, Canvas |
+| [Slime Mold Simulation](https://github.com/camwillm/slime-mold-zig) | Demo coming soon | Zig, WASM, Canvas |
 
 <details>
 <summary>Project descriptions</summary>
@@ -89,7 +89,7 @@ Running a production-grade self-hosted stack on personal hardware, 40+ container
 
 ```
 Hardware:  Ryzen 7 5800X · 32GB DDR4 · 1TB NVMe · Ubuntu 24.04
-Network:   Tailscale VPN · Nginx Proxy Manager · camwillm.me on AWS Route 53
+Network:   Tailscale VPN · Nginx Proxy Manager
 Services:  Ollama (qwen2.5:14b) · Qdrant · Flowise · Vaultwarden · Plane · Langfuse
 Apps:      AI Resume Tailoring System (RAG + Claude Haiku + React frontend)
            Stock Position Monitor (Go + SQLite, read-only alerts)
