@@ -20,7 +20,8 @@ I'm a computer science graduate (B.S., Morgan State University, May 2026) and an
 
 My homelab runs 24/7 on a Ryzen 7 5800X with 32GB RAM, hosting LLM inference, vector search, RAG pipelines, and everything I'm currently building. I use it as my personal dev platform and deploy things people actually use.
 
-- Currently building: **Gluecozs**, a Go dashboard for my personal homelab that I plan to release as a Docker container, starting with a **read-only stock position monitor** (v1 is live on my homelab)
+- Currently building: **Gluecozs**, a self-hosted, modular Go dashboard for my own homelab and life — a home page with a real-time day/night theme, a week strip, a timeline of the day, and status cards from every module, plugged into one app through a shared Go interface. Calendar, system vitals, and a CRM-style people tracker are live on my homelab today (Docker, Tailscale)
+- Also building: **gluecozs-people**, a relationship-tracker module for Gluecozs — contacts bucketed by context, a reach-out cadence per person, and a force-directed "galaxy map" of how everyone connects, rendered on an HTML canvas
 - Also building: **AI Resume Tailoring System** (self-hosted RAG + Claude Haiku)
 - Researching: LLM failure modes, prompt evaluation, and automated grading systems
 - Open to: Software Engineer / AI Engineer roles (internships and full-time) in Healthcare Tech and Fintech
@@ -60,6 +61,11 @@ My homelab runs 24/7 on a Ryzen 7 5800X with 32GB RAM, hosting LLM inference, ve
 
 | Project | Demo | Stack |
 |--------|------|-------|
+| [Gluecozs](https://github.com/camwillm/gluecozs) | Private (homelab, Tailscale) | Go, html/template, htmx, Docker |
+| [gluecozs-sdk](https://github.com/camwillm/gluecozs-sdk) | — (shared contract, not user-facing) | Go |
+| [gluecozs-calendar](https://github.com/camwillm/gluecozs-calendar) | Module of Gluecozs | Go, Claude API |
+| [gluecozs-vitals](https://github.com/camwillm/gluecozs-vitals) | Module of Gluecozs | Go, Docker API, /proc |
+| [gluecozs-people](https://github.com/camwillm/gluecozs-people) | Module of Gluecozs | Go, HTML canvas |
 | [Stock Position Monitor](https://github.com/camwillm/stock-position-monitor) | [Architecture](https://github.com/camwillm/stock-position-monitor#readme) | Go, SQLite, Docker, Tailscale |
 | [AI Resume Tailoring System](https://github.com/camwillm) | Private (self-hosted) | Python, Node.js, React, Qdrant, Docker |
 | [BearAdvisorAI](https://github.com/camwillm/BearAdvisorAI) | Demo coming soon | React, Vertex AI, Gemini 1.5 Pro, PostgreSQL |
@@ -71,6 +77,11 @@ My homelab runs 24/7 on a Ryzen 7 5800X with 32GB RAM, hosting LLM inference, ve
 <details>
 <summary>Project descriptions</summary>
 
+- **Gluecozs** — Self-hosted modular dashboard for my homelab and life, server-rendered in Go (`html/template` + htmx, no client-side framework). The home page ("Abode") has a real sunrise/sunset-driven day/night theme, a week strip, a day timeline that packs overlapping events into side-by-side columns, concentric ring meters for system vitals, and Focus cards any module can fill in. The core owns layout, nav, and every secret (API keys are entered once, stored encrypted, and lent to modules as a capability so modules never see the key); modules only ever hand back plain data and HTML bodies for their own pages
+- **gluecozs-sdk** — The shared contract between the Gluecozs core and its modules: the Go interfaces and types (`NavItem`, `Widget`, `Event`, …) every module implements, so a new module plugs in without the core knowing anything about it ahead of time
+- **gluecozs-calendar** — Events and repeating events, quick add/edit/delete, and an "ask the calendar" box that proposes changes in plain English via the Claude API. The model only ever proposes a change; Go code validates every field, and nothing is written until I confirm it
+- **gluecozs-vitals** — Read-only system monitor: CPU, memory, disk, load, Docker container health (via a read-only socket proxy, not the raw Docker socket), and uptime checks against a list of URLs. A background loop does the polling so pages stay fast; the UI turns amber the moment something needs attention
+- **gluecozs-people** — Contacts bucketed by context (family, work, etc.), a reach-out cadence per person, suggested next actions, and a force-directed "galaxy map" showing how everyone in my life connects to everyone else, drawn on an HTML canvas
 - **Stock Position Monitor** — Self-hosted, read-only stock tracker in Go. Each purchase is its own lot, with volatility-tiered alert rules, alert state saved in SQLite, a shared-fetch quote cache, and tests run under Go's race detector. No broker connection, so a bug can't trade. Alerts are log-only today; phone push is next, then it becomes a module of Gluecozs
 - **AI Resume Tailoring System** — Self-hosted RAG pipeline that tailors resumes per job description. Flowise + Qdrant + Claude Haiku, 7 templates, PDF export, token tracking
 - **BearAdvisorAI** — Multimodal AI advising system for Morgan State. Catches Gemini hallucinations with a 7-step validation pipeline
@@ -91,7 +102,8 @@ Running a production-grade self-hosted stack on personal hardware, 40+ container
 Hardware:  Ryzen 7 5800X · 32GB DDR4 · 1TB NVMe · Ubuntu 24.04
 Network:   Tailscale VPN · Nginx Proxy Manager
 Services:  Ollama (qwen2.5:14b) · Qdrant · Flowise · Vaultwarden · Plane · Langfuse
-Apps:      AI Resume Tailoring System (RAG + Claude Haiku + React frontend)
+Apps:      Gluecozs (Go homelab/life dashboard — Calendar, Vitals, People modules)
+           AI Resume Tailoring System (RAG + Claude Haiku + React frontend)
            Stock Position Monitor (Go + SQLite, read-only alerts)
 ```
 
